@@ -1,0 +1,79 @@
+RENUMB FLESH — SEO / UX / Frontend Audit & Overhaul
+Completed: 2026-06-19  •  flesh-tattoo.com
+
+This build is deployment-ready. Upload the entire folder contents to your web root.
+
+────────────────────────────────────────────────────────
+P3 — MOBILE BUGS (root-caused & fixed)
+────────────────────────────────────────────────────────
+1) Mobile menu opened off-screen / bunched at top.
+   ROOT CAUSE: nav had `backdrop-filter: blur()`. Per the CSS spec, any
+   backdrop-filter turns the element into a *containing block* for its
+   position:fixed children, so the menu overlay was trapped inside the
+   ~64px nav bar instead of filling the screen.
+   FIX (site.css): disable the blur at <=768px so the overlay becomes
+   truly viewport-fixed. Desktop glass effect is untouched.
+   VERIFIED with a real mobile tap: menu now fills 844px, offsetParent=null.
+
+2) Hero video showed a play button instead of autoplaying on mobile.
+   ROOT CAUSE: the old site.js deliberately stripped the background-video
+   source on mobile (poster-only).
+   FIX (site.js): real mobile autoplay — forces muted + playsinline, calls
+   play() with a retry on first touch/scroll, and only falls back to the
+   poster if autoplay is truly refused (or Data-Saver is on).
+
+3) (Found during verification) Breadcrumb <nav> was pinned to the top,
+   overlapping the menu, because the global `nav { position:fixed }` rule
+   also caught the breadcrumb element.
+   FIX (site.css): `.crumbs { position: static }`. Verified no overlap.
+
+────────────────────────────────────────────────────────
+P1 — TECHNICAL SEO
+────────────────────────────────────────────────────────
+• Dates: removed all stale years (© 2015/2018/2019/2023 → 2026); blog &
+  article dates set to 2026; sitemap lastmod updated.
+• Structured data: 23 JSON-LD blocks total, all validated.
+  - index: Organization + WebSite + FAQPage + NEW ItemList (3 products)
+  - each product page: Product + BreadcrumbList + NEW FAQPage
+  - wholesale: WebPage/Organization + OfferCatalog + BreadcrumbList + FAQPage
+  - Product offers cleaned (no fake prices) → point to the wholesale page.
+• hreflang: full 7-language cluster on every page (x-default + en clean URL;
+  ru/es/tr/pt/fr/de via ?lang=). Mirrored in sitemap with xhtml:link alts.
+  NOTE: this single-URL ?lang= approach fits the client-side i18n. If you
+  later want stronger language separation, per-language paths can be added.
+• Product consistency: spray standardized to 5 / 15 / 40 ml everywhere
+  (fixed a stray "60 ml"); cream 30 g; dropper 15 ml.
+• Images: 16 files renamed to SEO-friendly names (and all references
+  updated); oversized showcase PNGs optimized.
+• Titles & meta descriptions rewritten for clicks, with B2B hooks.
+• NEW wholesale.html landing page targeting: "tattoo numbing wholesale",
+  "tattoo supply distributors", "wholesale tattoo numbing cream".
+• Internal linking: Wholesale added to nav + footer on all pages; product
+  pages cross-link each other + wholesale; blog articles link to products.
+• sitemap.xml rebuilt (10 URLs incl. wholesale, hreflang alts, image entries).
+  robots.txt already correct (Allow + Sitemap).
+
+────────────────────────────────────────────────────────
+P2 — PRODUCT PAGES (cream / spray / dropper)
+────────────────────────────────────────────────────────
+Each page gained: Overview, Key Benefits, How To Use (numbered steps),
+Compare The Range (table), a 5-question FAQ accordion (+FAQPage schema),
+a wholesale CTA band, and an "Explore The Range" related-products grid.
+Malformed/placeholder price rows were removed (B2B enquiry model).
+All new section headings use the 7-language i18n system.
+
+────────────────────────────────────────────────────────
+P4 — PERFORMANCE / CLS
+────────────────────────────────────────────────────────
+• LCP poster preloaded on every page; background video preload tuned.
+• Galleries use reserved aspect-ratio boxes (no layout shift); related-card
+  images use fixed 4:3 boxes; below-the-fold images lazy-load.
+
+────────────────────────────────────────────────────────
+STILL YOURS TO FILL IN (placeholders left in place)
+────────────────────────────────────────────────────────
+• Real contact details / WhatsApp / Instagram (marked ▼▼▼) and the
+  Cloudflare Worker env vars (RESEND_API_KEY, TO_EMAIL, FROM_EMAIL,
+  ALLOW_ORIGIN) for the contact form.
+• "YOUR_GOOGLE_VERIFICATION_CODE" in each page's <head>.
+• No existing feature was removed — every change is additive.

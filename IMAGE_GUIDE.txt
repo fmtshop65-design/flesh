@@ -1,0 +1,31 @@
+================================================================
+RENUMB FLESH — Image & video guide
+================================================================
+Replace any file with one of the same name. Keep all files together.
+
+BACKGROUND VIDEO
+  site-bg.mp4            Full-site background video (already optimized).
+  site-bg-poster.jpg     Shown before/instead of the video (and on mobile).
+
+PRODUCT PHOTOS (square 1:1 recommended, ~1200x1200)
+  cream-image-1..4.jpg   Cream gallery
+  spray-image-1..4.jpg   Spray gallery
+  dropper-image-1..4.jpg Dropper gallery
+  product-float.png      Floating product image on the cream page (PNG, transparent)
+
+BRAND / ICONS (generated for you — replace only if you want)
+  flesh-logo.png         The "FLESH" wordmark used in the nav & footer
+  favicon.ico, favicon-16.png, favicon-32.png, apple-touch-icon.png,
+  icon-192.png, icon-512.png   Browser/phone icons
+  og-image.jpg           1200x630 image shown when the site is shared on
+                         social media / messaging apps
+
+UNUSED-BY-DEFAULT (kept for compatibility; you may add them)
+  hero-bg.mp4, hero.mp4  Optional hero videos. The site currently uses the
+                         single background video, so these are not required.
+  hero-poster.jpg, product-hero-poster.jpg
+
+Tips
+  - Square images (1:1) look best in the galleries; they scale automatically.
+  - Use JPG for photos, PNG for transparent images.
+  - File names must match exactly.
