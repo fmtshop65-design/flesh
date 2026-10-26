@@ -16,6 +16,14 @@
   background:#080808 url("site-bg-poster.webp") center center / cover no-repeat !important;
 }
 .site-bg.poster-only video{ display:none !important; }
+@media (max-width: 768px) {
+  .site-bg:not(.poster-only) video {
+    display: block !important;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+  }
+}
 
 /* Kill the iOS/Android media "play" overlay everywhere */
 video::-webkit-media-controls,

@@ -678,11 +678,6 @@
   video::-webkit-media-controls-start-playback-button,
   video::-webkit-media-controls-overlay-play-button { display: none !important; }
 
-  /* On mobile, use poster image instead of video for performance */
-  @media (max-width: 768px) {
-    .site-bg video { display: none !important; }
-    .site-bg { background: url('site-bg-poster.webp') center / cover no-repeat !important; }
-  }
 
   /* --- FLESH image logo --- */
   .nav-logo, .footer-logo { display: inline-flex; align-items: center; gap: 10px; }
@@ -945,7 +940,7 @@
 
 <!-- Background Video -->
 <div class="site-bg">
-  <video muted loop playsinline webkit-playsinline preload="none" poster="site-bg-poster.webp">
+  <video autoplay muted loop playsinline webkit-playsinline preload="metadata" poster="site-bg-poster.webp">
     <source src="site-bg.mp4" type="video/mp4">
   </video>
 </div>
