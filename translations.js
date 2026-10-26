@@ -27,10 +27,10 @@ const translations = {
 
     productLine: "Export catalog",
     chooseProduct: "Wholesale prices in USD",
-    creamDesc: "Pre-session cream, 30 ml. The brand states about 2-3 hours. Results vary. Export price $8.",
-    creamTag: "$8",
+    creamDesc: "Pre-session cream, 30 ml. The brand states about 2-3 hours. Results vary. Export price $30.",
+    creamTag: "$30",
     sprayDesc: "During-session spray in 5, 15, 40 and 60 ml.",
-    sprayTag: "from $5",
+    sprayTag: "from $10",
     dropperDesc: "Drop Head 15 ml for targeted professional use. Export price $8.",
     dropperTag: "$8",
 
@@ -138,10 +138,10 @@ const translations = {
 
     productLine: "Export catalog",
     chooseProduct: "Wholesale prices in USD",
-    creamDesc: "Pre-session cream, 30 ml. The brand states about 2-3 hours. Results vary. Export price $8.",
-    creamTag: "$8",
+    creamDesc: "Pre-session cream, 30 ml. The brand states about 2-3 hours. Results vary. Export price $30.",
+    creamTag: "$30",
     sprayDesc: "During-session spray in 5, 15, 40 and 60 ml.",
-    sprayTag: "from $5",
+    sprayTag: "from $10",
     dropperDesc: "Drop Head 15 ml for targeted professional use. Export price $8.",
     dropperTag: "$8",
 
@@ -247,10 +247,10 @@ const translations = {
 
     productLine: "Export catalog",
     chooseProduct: "Wholesale prices in USD",
-    creamDesc: "Pre-session cream, 30 ml. The brand states about 2-3 hours. Results vary. Export price $8.",
-    creamTag: "$8",
+    creamDesc: "Pre-session cream, 30 ml. The brand states about 2-3 hours. Results vary. Export price $30.",
+    creamTag: "$30",
     sprayDesc: "During-session spray in 5, 15, 40 and 60 ml.",
-    sprayTag: "from $5",
+    sprayTag: "from $10",
     dropperDesc: "Drop Head 15 ml for targeted professional use. Export price $8.",
     dropperTag: "$8",
 
@@ -356,10 +356,10 @@ const translations = {
 
     productLine: "Export catalog",
     chooseProduct: "Wholesale prices in USD",
-    creamDesc: "Pre-session cream, 30 ml. The brand states about 2-3 hours. Results vary. Export price $8.",
-    creamTag: "$8",
+    creamDesc: "Pre-session cream, 30 ml. The brand states about 2-3 hours. Results vary. Export price $30.",
+    creamTag: "$30",
     sprayDesc: "During-session spray in 5, 15, 40 and 60 ml.",
-    sprayTag: "from $5",
+    sprayTag: "from $10",
     dropperDesc: "Drop Head 15 ml for targeted professional use. Export price $8.",
     dropperTag: "$8",
 
@@ -465,10 +465,10 @@ const translations = {
 
     productLine: "Export catalog",
     chooseProduct: "Wholesale prices in USD",
-    creamDesc: "Pre-session cream, 30 ml. The brand states about 2-3 hours. Results vary. Export price $8.",
-    creamTag: "$8",
+    creamDesc: "Pre-session cream, 30 ml. The brand states about 2-3 hours. Results vary. Export price $30.",
+    creamTag: "$30",
     sprayDesc: "During-session spray in 5, 15, 40 and 60 ml.",
-    sprayTag: "from $5",
+    sprayTag: "from $10",
     dropperDesc: "Drop Head 15 ml for targeted professional use. Export price $8.",
     dropperTag: "$8",
 
@@ -574,10 +574,10 @@ const translations = {
 
     productLine: "Export catalog",
     chooseProduct: "Wholesale prices in USD",
-    creamDesc: "Pre-session cream, 30 ml. The brand states about 2-3 hours. Results vary. Export price $8.",
-    creamTag: "$8",
+    creamDesc: "Pre-session cream, 30 ml. The brand states about 2-3 hours. Results vary. Export price $30.",
+    creamTag: "$30",
     sprayDesc: "During-session spray in 5, 15, 40 and 60 ml.",
-    sprayTag: "from $5",
+    sprayTag: "from $10",
     dropperDesc: "Drop Head 15 ml for targeted professional use. Export price $8.",
     dropperTag: "$8",
 
@@ -683,10 +683,10 @@ const translations = {
 
     productLine: "Export catalog",
     chooseProduct: "Wholesale prices in USD",
-    creamDesc: "Pre-session cream, 30 ml. The brand states about 2-3 hours. Results vary. Export price $8.",
-    creamTag: "$8",
+    creamDesc: "Pre-session cream, 30 ml. The brand states about 2-3 hours. Results vary. Export price $30.",
+    creamTag: "$30",
     sprayDesc: "During-session spray in 5, 15, 40 and 60 ml.",
-    sprayTag: "from $5",
+    sprayTag: "from $10",
     dropperDesc: "Drop Head 15 ml for targeted professional use. Export price $8.",
     dropperTag: "$8",
 
