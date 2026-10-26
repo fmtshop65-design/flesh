@@ -1,15 +1,17 @@
 RENUMB FLESH image files (export site)
-Use these real shop photos. Do not restore the older generated pack shots.
 
-sku-cream-30.jpg     cream tube and box, 30 ml
-sku-cream-hand.jpg   cream tube in hand
-sku-spray-5.jpg      spray 5 ml
-sku-spray-15.jpg     spray 15 ml
-sku-spray-40.jpg     spray 40 ml
-sku-spray-60.jpg     spray 60 ml
-sku-dropper-15.jpg   Drop Head 15 ml
+Product photos and posters are WebP:
+sku-cream-30.webp
+sku-cream-hand.webp
+sku-spray-5.webp
+sku-spray-15.webp
+sku-spray-40.webp
+sku-spray-60.webp
+sku-dropper-15.webp
+og-image.webp
+hero-poster.webp
+product-hero-poster.webp
+site-bg-poster.webp
+flesh-logo.webp
 
-The pages currently load these same photos from fleshtattoosupply.com
-so the export site can show the real pack shots. The local sku-*.jpg
-files are the same photographs, ready to replace those links when
-they are committed into this repository.
+Favicons stay PNG and ICO.

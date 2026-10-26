@@ -13,7 +13,7 @@
 
 /* ---------- Background: show poster instantly, no play-icon ---------- */
 .site-bg{
-  background:#080808 url("site-bg-poster.jpg") center center / cover no-repeat !important;
+  background:#080808 url("site-bg-poster.webp") center center / cover no-repeat !important;
 }
 .site-bg.poster-only video{ display:none !important; }
 
@@ -371,3 +371,34 @@ img{ height:auto; }                 /* keep aspect ratio when width/height set *
 
 /* Active nav link (wholesale/current page) */
 .nav-center a.active, .nav-links a.active{ color: var(--amber-bright); }
+
+.gallery-item img,
+.related-card img,
+.float-stage img,
+.product-shot {
+  object-fit: contain !important;
+  background: #111;
+}
+.product-shot {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  margin: 0 0 18px;
+}
+.price-usd,
+.product-card .product-price {
+  font-family: 'Cinzel', serif;
+  font-size: 28px;
+  letter-spacing: 1px;
+  display: block;
+  margin: 12px 0 4px;
+  color: #f2f2f2;
+}
+.price-note {
+  max-width: 760px;
+  margin: 28px auto 0;
+  color: #9aa0a6;
+  font-size: 14px;
+  line-height: 1.7;
+  text-align: center;
+}
